@@ -1,0 +1,141 @@
+@font-face {
+    font-family: iconfont;
+    src: url(http://g.tbcdn.cn/tb/icon-font/1.1.5/iconfont.eot);
+    /*兼容其他浏览器*/
+    src: url(http://g.tbcdn.cn/tb/icon-font/1.1.5/iconfont.eot?#iefix) format("embedded-opentype"), url(http://g.tbcdn.cn/tb/icon-font/1.1.5/iconfont.woff) format("woff"), url(http://g.tbcdn.cn/tb/icon-font/1.1.5/iconfont.ttf) format("truetype"), url(http://g.tbcdn.cn/tb/icon-font/1.1.5/iconfont.svg#uxiconfont) format("svg")
+}
+
+body {
+    /*类似于此写法
+        字体大小font-size：12px;  
+        设置行高line-height：1.5em; 
+        字体类型font-family："tahoma","Arial","sans-serif";
+    */
+    font: 12px/1.5 tahoma, Arial, sans-serif;
+}
+
+a {
+    /*去掉a标签默认下划线*/
+    text-decoration: none;
+}
+
+.search-container {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.search-button {
+    float: right;
+    width: 74px;
+    height: 45px;
+    overflow: hidden;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.btn-search {
+    color: #fff;
+    background-color: #FF4200;
+    cursor: pointer;
+    border: none;
+    outline: 0;
+    font-size: 18px;
+    font-weight: 700;
+    height: 100%;
+    width: 100%;
+}
+
+.search-common-pannel {
+    height: 39px;
+    background-color: #f50;
+    /*超出的做隐藏处理*/
+    overflow: hidden;
+    padding: 3px 0 3px 3px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.search-common-pannel input {
+    /*同时设置height和line-height是为了使内容垂直居中*/
+    height: 39px;
+    line-height: 39px;
+    /*宽度自适应*/
+    width: 100%;
+    /*去掉input框默认样式*/
+    border: 0 none;
+    /*去除chrome浏览器默认蓝色高亮边框*/
+    outline: 0;
+    background-color: #fff;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    text-indent: 20px;
+}
+
+.search-common-pannel i {
+    position: absolute;
+    top: 37px;
+    left: 24px;
+    color: #ccc;
+}
+
+.iconfont {
+    font-family: iconfont;
+    font-size: 14px;
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+ul,
+li {
+    /*消除默认样式*/
+    margin: 0;
+    padding: 0;
+}
+
+.search-list {
+    height: 22px;
+    margin-left: 20px;
+}
+
+.search-list li {
+    color: #F40;
+    float: left;
+    width: 36px;
+    height: 22px;
+    line-height: 22px;
+    margin-right: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.search-list li a {
+    color: #F40;
+    font-size: 12px;
+}
+
+.search-list .selected {
+    color: #fff;
+    font-weight: 700;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    background: #F40;
+}
+
+.search-list .selected a {
+    color: #FFF;
+}
+
+.search-list:hover li {
+    display: block;
+    cursor: pointer;
+    width: 36px;
+    height: 22px;
+}
+
+.search-list ul li:hover {
+    background: #ddd;
+}

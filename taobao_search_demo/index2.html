@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <link rel="stylesheet" href="/workspace/vscode_workspace/taobao_search_demo/css/index2.css">
+    <title>淘宝搜索框</title>
+</head>
+
+<body>
+    <!--搜索框容器-->
+    <div class="search-container">
+        <div class="search-list" id="search-tab">
+            <ul>
+                <li id="tab_1" class="selected"><a href="#">宝贝</a></li>
+                <li id="tab_2"><a href="#">店铺</a></li>
+            </ul>
+        </div>
+        <div class="search-pannel">
+            <form action="">
+                <div class="search-tips">
+                    <a href="#">高级<br>搜索</a>
+                </div>
+                <div class="search-button">
+                    <button class="btn-search" type="submit">搜索</button>
+                </div>
+                <div class="search-common-pannel">
+                    <input type="text" name="" id="keyword" x-webkit-speech="" lang="zh-CN" onkeyup="this.value=this.value.replace(/\s+/g,'')" />
+                    <i class="iconfont">ő</i>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script src="/workspace/vscode_workspace/taobao_search_demo/js/jquery-1.8.3.min.js"></script>
+<script src="/workspace/vscode_workspace/taobao_search_demo/js/index1.js"></script>
